@@ -1,0 +1,114 @@
+<!DOCTYPE html>	
+
+<html>
+<head>
+	<title>Tap Music</title>
+  <link rel="stylesheet" type="index/js" href="index.js">
+</head>
+<style>
+	.app{
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+	}
+	header h1 {
+		margin: 50px 0px 30px 0px;
+		text-align: center;
+		font-size: 40px;
+	}
+	header p {
+		font-size: 20px;
+	}
+	.pads {
+		background: lightblue;
+		width: 100%;
+		display: flex;
+	}
+	.pads > div{
+		height: 100px;
+		width: 100px;
+		flex: 1;
+	}
+	.pad1 {
+		background:green;
+	}
+	.pad2 {
+		background:yellow;
+	}
+	.pad3 {
+		background:red;
+	}
+	.pad4 {
+		background:blue;
+	}
+	.pad5 {
+		background:orange;
+	}
+	.pad6 {
+		background:pink;
+	}
+	
+.visual > div {
+  position: absolute;
+  bottom: 0%;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  transform: scale(1);
+  z-index: -1;
+}
+	@keyframes jump {
+  0% {
+    bottom: 0%;
+    left: 20%;
+  }
+  50% {
+    bottom: 50%;
+    left: 50%;
+  }
+
+  100% {
+    bottom: 00%;
+    left: 80%;
+  }
+
+
+
+</style>
+<body>
+<div class="app">
+	<header>
+		<h1>Tap Music</h1>
+		<p>Make Music Only One Tap</p>
+	</header>
+	<div class="visual"></div>
+	<div class="pads">
+
+	    <div class="pad1"></div>
+	    <audio class="sound" src="./sounds/bubbles.mp3"></audio>
+
+	    <div class="pad2"></div>
+	    <audio  class="sound" src="./sounds/clay.mp3"></audio>
+
+	    <div class="pad3"></div>
+	    <audio  class="sound" src="./sounds/confetti.mp3"></audio>
+
+	    <div class="pad4"></div>
+	  	    <audio class="sound" src="./sounds/glimmer.mp3"></audio>
+
+	    <div class="pad5"></div>
+	    <audio class="sound"   src="./sounds/moon.mp3"></audio>
+
+	    <div class="pad6"></div>
+	    <audio class="sound"  src="./sounds/ufo.mp3"></audio>
+
+	</div>
+	
+</div>
+
+    <script src="./index.js"></script>
+
+</body>
+</html>
